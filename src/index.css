@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.container > h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.balance-section {
+  text-align: center;
+}
+
+.balance-section h2 {
+  margin-bottom: 5px;
+}
+
+.balance-section h3 {
+  font-size: 32px;
+  margin: 10px 0 25px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.summary p {
+  margin: 5px 0;
+}
+
+.income {
+  color: #16803c;
+}
+
+.expense {
+  color: #c62828;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #555;
+}
+
+.form-section button {
+  width: 100%;
+  padding: 11px;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+}
+
+.error-message {
+  margin: 10px 0;
+  color: #c62828;
+}
+
+.empty-message {
+  text-align: center;
+  color: #777;
+}
+
+.transaction-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.transaction-item:last-child {
+  border-bottom: none;
+}
+
+.transaction-item strong {
+  font-size: 16px;
+}
+
+.transaction-item p {
+  margin: 5px 0 0;
+}
+
+.delete-button {
+  border: none;
+  background-color: #c62828;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .summary {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .transaction-item {
+    gap: 15px;
+  }
+}
